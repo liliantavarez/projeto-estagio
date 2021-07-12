@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ONG</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./img/icon.ico" type="icon" />
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="title">Lar Vira Lata</div>
+
+            <div class="alert" id="success"></div>
+            <div class="alert" id="error"></div>
+
+            <div class="input">
+                <label>Especie:</label>
+                <select name="especie" id="especie">
+                    <option value="select" selected>SELECIONE</option>
+                    <option value="Gato">Gato</option>
+                    <option value="Cachorro">Cachorro</option>
+                </select>
+            </div>
+
+            <div class="input">
+                <label>Porte:</label>
+                <select name="porte" id="porte">
+                    <option value="select" selected>SELECIONE</option>
+                    <option value="Pequeno">Pequeno</option>
+                    <option value="Médio">Médio</option>
+                    <option value="Grande">Grande</option>
+                </select>
+            </div>
+
+            <div class="input">
+                <label>Numero de ID:</label>
+                <input id="numId" type="text" name="nome" style="width: 50px; height: 25px">              
+            </div>
+
+            <div class="input" id="desc">
+                <label>Descrição:</label>
+                <textarea id="descricao" name="descrição"></textarea>
+            </div>
+
+            <div class="button">
+                <button onclick="cadastros.cadastrar()">CADASTRAR</button>
+            </div>
+
+        </div>
+    </main>
+  </body>
+</html>
