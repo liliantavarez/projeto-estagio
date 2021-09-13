@@ -1,8 +1,5 @@
 class Cadastro {
-    constructor() {
-        
-    }
-    
+
     cadastrar() {
         let arrayCadastros = JSON.parse(localStorage.getItem("arrayCadastros") || "[]");
         let cadastro = this.receberDados();
@@ -53,5 +50,12 @@ class Cadastro {
 
 }
 
-let cadastros = new Cadastro();
+let fazerCadastros = new Cadastro();
+let exibirCadastros = JSON.parse(localStorage.getItem("arrayCadastros"));
+console.log("| ID |"+" ESPECIE")
+for (let i in exibirCadastros) {
+    console.log("| "+exibirCadastros[i].numId+"  | "+exibirCadastros[i].especie)
+    console.log()
+    
 
+}

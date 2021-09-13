@@ -1,24 +1,18 @@
-main{
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-  
-  }
 
-  .container{
+
+  main{
     display: flex;
     flex-direction: column;
-    background: url(./img/background.jpg) repeat;
+    background: url(/img/background.jpg) repeat;
     width: 400px;
     height: 600px;
-    align-items: center;
+    padding: 10px;
     justify-content: center;
     border-radius: 20px;
     box-shadow: 0 0 10px black;
+    margin:auto;
   }
-  .title{
+  title{
     display: flex;
     justify-content: center;
     align-items: center;
