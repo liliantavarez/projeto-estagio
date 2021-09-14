@@ -3,7 +3,7 @@
   main{
     display: flex;
     flex-direction: column;
-    background: url(/img/background.jpg) repeat;
+    background: url(/img/background.jpg);
     width: 400px;
     height: 600px;
     padding: 10px;
@@ -22,71 +22,27 @@
     border-top: solid 5px black;
     border-bottom: solid 5px black;
     margin-bottom: 20px;
-    padding: 15px 0;
-    
+   
   }
-  .input {
+  section {
     display: flex;
-    width: 300px;
-    height: 50px;
-    justify-content: flex-start;
-    align-items: baseline;
     margin-top: 20px;
   }
   
-  .input input {
 
-    border-radius: 5px;
-    border-style:solid;
-    outline: 0;
-    font: bold 1rem monospace;
-    text-align: initial;
-  }
   label{
     font: bold 22px monospace;
     padding-right: 5px;
   }
 
   button{
-      width: 216;
-      height:44 ;
-      padding: 5px;
-      font: bold 20px monospace;
       margin:90px 20px 0 0 ;    
     }
 
-  select{
-    border-radius: 5px;
-    font-family: monospace;
-    font-size: 14px;
-    width: 95px;
-    height: 35px;
-  }
-  textarea{
-      font-size:14px;
-      width: 230px; 
-      height: 100px; 
-      resize: none;
-    }
 
-    #error{
-      text-align: center;
-      color: rgb(177, 6, 6);
-      background-color: rgb(255, 188, 188);
-      padding: 5px 10px;
-      border-radius: 4px;
-      width: 200px;  
-      display: none;    
-    }
-    #success{
-      text-align: center;
-      color: rgb(0, 63, 31);
-      background-color: rgb(169, 243, 173);
-      padding: 5px 10px;
-      border-radius: 4px;
-      width: 200px;
-      display: none;      
-    }
+
+
+
 
 
 

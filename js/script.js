@@ -29,9 +29,9 @@ class Cadastro {
             cadastro.numId != "" &&
             cadastro.descricao != ""
         ) {
-            msgSuccess.setAttribute("style", "display:block");
+            msgSuccess.setAttribute("style", "display:inline;text-align: center;");
             msgSuccess.innerHTML =
-                "<strong>Cadastro realizado com sucesso</strong>";
+                "<strong>Cadastro realizado com sucesso!</strong>";
             msgError.setAttribute("style", "display:none");
             msgError.innerHTML = "";
             document.getElementById("numId").value = "";
@@ -40,8 +40,8 @@ class Cadastro {
             document.getElementById("porte").value = "select";
             return true;
         } else {
-            msgError.setAttribute("style", "display:block");
-            msgError.innerHTML = "<strong>Preencha todos os dados</strong>";
+            msgError.setAttribute("style", "display:inline;text-align: center;");
+            msgError.innerHTML = "<strong>Preencha todos os dados!</strong>";
             msgSuccess.setAttribute("style", "display:none");
             msgSuccess.innerHTML = "";
             return false;
