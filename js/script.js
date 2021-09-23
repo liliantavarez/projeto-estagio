@@ -3,7 +3,6 @@ class Cadastro {
     cadastrar() {
         let arrayCadastros = JSON.parse(localStorage.getItem("arrayCadastros") || "[]");
         let cadastro = this.receberDados();
-        
         if (this.validarDados(cadastro)) {
             arrayCadastros.push(cadastro);
             localStorage.setItem("arrayCadastros", JSON.stringify(arrayCadastros));
@@ -51,11 +50,18 @@ class Cadastro {
 }
 
 let fazerCadastros = new Cadastro();
-let exibirCadastros = JSON.parse(localStorage.getItem("arrayCadastros"));
-console.log("| ID |"+" ESPECIE")
-for (let i in exibirCadastros) {
-    console.log("| "+exibirCadastros[i].numId+"  | "+exibirCadastros[i].especie)
-    console.log()
-    
+let cadastrados = JSON.parse(localStorage.getItem("arrayCadastros"));
 
+function exibirNaTela(cadastrados) {
+  var html = "";
+  for (var i = 0; i < cadastrados.length; i++) {
+    html += "<tr><td>" + cadastrados[i].numId + "</td>";
+    html += "<td>" + cadastrados[i].especie + "</td>";
+    html += "<td>" + cadastrados[i].porte + "</td>";
+    html += "<td >" + cadastrados[i].descricao + "</td>";
+  }
+  var tabela = document.getElementById("exibirCadastros");
+  tabela.innerHTML = html;
 }
+
+exibirNaTela(cadastrados);

@@ -12,6 +12,7 @@
     box-shadow: 0 0 10px black;
     margin:auto;
   }
+
   title{
     display: flex;
     justify-content: center;
@@ -37,9 +38,17 @@
 
   button{
       margin:90px 20px 0 0 ;    
-    }
+  }
 
-
+  td {
+    max-width:50px;
+    width:auto;
+    min-width:10px;
+  }
+  table {
+    background-color: rgba(207, 47, 207, 0.041);
+    word-wrap:break-word;
+  }
 
 
 
