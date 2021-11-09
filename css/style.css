@@ -1,7 +1,7 @@
 main{
     display: flex;
     flex-direction: column;
-    background: url(https://raw.githubusercontent.com/liliantavarez/projeto-ong/main/img/background.jpg);
+    background: url(/img/background.jpg);
     width: 400px;
     height: 600px;
     justify-content:flex-start;
