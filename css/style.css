@@ -1,54 +1,59 @@
-
-
-  main{
+main{
     display: flex;
     flex-direction: column;
     background: url(/img/background.jpg);
     width: 400px;
     height: 600px;
-    padding: 10px;
-    justify-content: center;
+    justify-content:flex-start;
     border-radius: 20px;
     box-shadow: 0 0 10px black;
     margin:auto;
-  }
+}
 
-  title{
+title{
+    margin: 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 50px;
     font: bold 2.5rem monospace;
     border-top: solid 5px black;
     border-bottom: solid 5px black;
-    margin-bottom: 20px;
-   
-  }
-  section {
-    display: flex;
-    margin-top: 20px;
-  }
-  
+}
 
-  label{
-    font: bold 22px monospace;
-    padding-right: 5px;
-  }
-
-  button{
-      margin:90px 20px 0 0 ;    
-  }
-
-  td {
+td {
     max-width:50px;
     width:auto;
     min-width:10px;
-  }
-  table {
-    background-color: rgba(207, 47, 207, 0.041);
+}
+
+label{
+    font: bold 22px monospace;
+    padding-right: 5px;
+}
+
+.tbCadastrados{
+  padding: 10px;
+  margin-top: 50px;
+  height: 90%;
+  overflow-y: auto;
+}
+.inputs {
+   display: flex;
+   margin-top: 20px;
+   padding: 0 20px;
+}
+  
+.button{
+  margin:90px 20px 0 0 ;    
+}
+
+#tabela {
+    vertical-align: middle;
+    background-color: rgba(207, 47, 207, 0.103);
     word-wrap:break-word;
-  }
+  
+}
 
 
 

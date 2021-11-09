@@ -16,21 +16,23 @@
 <body>
 
     <main>
-        <title>Lar Vira Lata</title>
 
-        <div style="display: none; " class="alert alert-success" id="success"></div>
-        <div style="display: none; " class="alert alert-danger" id="error"></div>
 
-        <section>
+            <title>Lar Vira Lata</title>
+            
+            <div style="display: none; " class="alert alert-success" id="success"></div>
+            <div style="display: none; " class="alert alert-danger" id="error"></div>
+
+        <section class="inputs">
             <label>Especie:</label>
-            <select class="custom-select my-1 mr-sm-2"  id="especie">
+            <select class="custom-select my-1 mr-sm-2" id="especie">
                 <option value="select" selected>SELECIONE</option>
                 <option value="Gato">Gato</option>
                 <option value="Cachorro">Cachorro</option>
             </select>
         </section>
 
-        <section>
+        <section class="inputs">
             <label>Porte:</label>
             <select name="porte" id="porte">
                 <option value="select" selected>SELECIONE</option>
@@ -40,12 +42,12 @@
             </select>
         </section>
 
-        <section>
+        <section class="inputs">
             <label>Numero de ID:</label>
             <input class="form-control" id="numId" style="resize: none;width: 50px; height: 25px">
         </section>
 
-        <section>
+        <section class="inputs">
             <label>Descrição:</label>
             <textarea style="resize: none;" class="form-control" id="descricao" rows="4"></textarea>
         </section>

@@ -11,10 +11,9 @@
 
 </head>
 <body>
-    <main style="justify-content: space-between;">
-        
-
-            <table class="table table-bordered" >
+    <main>
+        <section class="tbCadastrados">
+            <table id="tabela" class="table table-bordered" >
                 <thead > 
                     <tr>
                         <th scope="col">ID</th>
@@ -23,13 +22,16 @@
                         <th scope="col">Descrição</th>
                     </tr>
                 </thead>
-                <tbody id="exibirCadastros">
+                <tbody id="exibirCadastros" class="">
                     
                 </tbody>
             </table>
-          <a style="margin-left: auto; padding: 25px;" href="index.html"><button type="button" class="btn btn-secondary">VOLTAR</button>
-          </a>
+        </section>
+        <section style="margin-left: auto; padding: 25px;" class="botao">
+         <a  href="index.html"><button type="button" class="btn btn-secondary">VOLTAR</button></a>
+        </section>
     </main>
+    
     <script src="./js/script.js"></script>
 </body>
 </html>
