@@ -1,62 +1,81 @@
-main{
-    display: flex;
-    flex-direction: column;
-    background: url(/img/background.jpg);
-    width: 400px;
-    height: 600px;
-    justify-content:flex-start;
-    border-radius: 20px;
-    box-shadow: 0 0 10px black;
-    margin:auto;
+main {
+  display: flex;
+  flex-direction: column;
+  background: url(../img/background.jpg);
+  width: 400px;
+  height: 600px;
+  justify-content: flex-start;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  box-shadow: 0 0 10px black;
+  margin: auto;
 }
 
-title{
-    margin: 50px 0 10px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font: bold 2.5rem monospace;
-    border-top: solid 5px black;
-    border-bottom: solid 5px black;
+title {
+  margin: 50px 0 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font: bold 2.5rem monospace;
+  border-top: solid 5px black;
+  border-bottom: solid 5px black;
 }
 
 td {
-    max-width:50px;
-    width:auto;
-    min-width:10px;
+  max-width: 50px;
+  width: auto;
+  min-width: 10px;
+}
+thead{
+    text-align: center;
+}
+label {
+  font: bold 22px monospace;
+  padding-right: 5px;
 }
 
-label{
-    font: bold 22px monospace;
-    padding-right: 5px;
-}
-
-.tbCadastrados{
+.tbCadastrados {
   padding: 10px;
   margin-top: 50px;
   height: 90%;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
+
 .inputs {
-   display: flex;
-   margin-top: 20px;
-   padding: 0 20px;
-}
-  
-.button{
-  margin:30px 20px 0 0 ;    
+  display: flex;
+  margin-top: 20px;
+  padding: 0 20px;
 }
 
+.button {
+  margin: 30px 20px 0 0;
+}
+.table {
+  backdrop-filter: blur(2px);
+  border-style: hidden;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
 #tabela {
-    vertical-align: middle;
-    background-color: rgba(207, 47, 207, 0.103);
-    word-wrap:break-word;
-  
+  vertical-align: middle;
+  background-color: rgba(207, 47, 207, 0.103);
+  word-wrap: break-word;
+}
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(249, 221, 237, 241);
 }
 
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
 
-
-
-
-
+*::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: rgba(249, 221, 237, 241);
+}
