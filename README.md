@@ -3,8 +3,6 @@ __Software em desenvolvimento;__
 * Projetado inicialmente para **armazenar** e **visualizar** informações de animais acolhidos por abrigos. 
 * Futuramente será possível também **manipular** dados cadastrados, assim como será adicionado novos métodos como a função de **adicionar o cartão de vacina** e **ficha medica** do animal. 
 
-Visite [o projeto](https://liliantavarez.github.io/projeto-ong/).
-
 ![01](https://user-images.githubusercontent.com/51184806/140980666-f1ab03ed-0dcb-45c6-82d3-30053db5b93a.png)
 ##
 ![02](https://user-images.githubusercontent.com/51184806/140980665-13c6b279-c7ab-4745-bdac-6a954abdefab.png)
