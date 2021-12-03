@@ -14,17 +14,18 @@
 </head>
 
 <body>
-
+    
     <main>
+    
+    <header class="cabecalho">
+        <title>Lar Vira Lata</title>
+        <div style="display: none; " class="alert alert-success" id="success"></div>
+        <div style="display: none; " class="alert alert-danger" id="error"></div>
+    </header>
 
-        <header class="cabecalho">
+    <div class="content">
 
-            <title>Lar Vira Lata</title>
-            
-            <div style="display: none; " class="alert alert-success" id="success"></div>
-            <div style="display: none; " class="alert alert-danger" id="error"></div>
-        </header>
-
+        
         <section class="inputs">
             <label>Especie:</label>
             <select class="custom-select my-1 mr-sm-2" id="especie">
@@ -33,7 +34,7 @@
                 <option value="Cachorro">Cachorro</option>
             </select>
         </section>
-
+        
         <section class="inputs">
             <label>Porte:</label>
             <select name="porte" id="porte">
@@ -43,25 +44,26 @@
                 <option value="Grande">Grande</option>
             </select>
         </section>
-
+        
         <section class="inputs">
             <label>Numero de ID:</label>
             <input class="form-control" id="numId" style="resize: none;width: 50px; height: 25px">
         </section>
-
+        
         <section class="inputs">
             <label>Descrição:</label>
             <textarea style="resize: none;" class="form-control" id="descricao" rows="4"></textarea>
         </section>
-
+        
         <section class="button" style="margin-left: auto;">
-
+            
             <a href="cadastrados.html"><button type="button" class="btn btn-outline-secondary">
-                    <link rel="stylesheet" href="cadastrados.html"> VER CADASTRADOS</button>
+                <link rel="stylesheet" href="cadastrados.html"> VER CADASTRADOS</button>
             </a>
-            <button type="button" class="btn btn-secondary" onclick="fazerCadastros.cadastrar()">CADASTRAR</button>
+            <button type="button" class="btn btn-secondary" onclick="realizarCadastro()">CADASTRAR</button>
         </section>
-
+    </div>
+        
     </main>
 </body>
 

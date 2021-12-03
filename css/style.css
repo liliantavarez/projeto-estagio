@@ -1,17 +1,20 @@
+body{
+  background-color: #fff1f1;
+}
+
 main {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   background: url(../img/background.jpg);
   width: 400px;
   height: 600px;
-  justify-content: flex-start;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   box-shadow: 0 0 10px black;
   margin: auto;
 }
-
 title {
   margin: 50px 0 10px 0;
   display: flex;
@@ -50,7 +53,9 @@ label {
 }
 
 .button {
-  margin: 30px 20px 0 0;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
 }
 .table {
   backdrop-filter: blur(2px);
