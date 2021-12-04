@@ -1,4 +1,4 @@
-body {
+.screen {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,7 +7,7 @@ body {
   background-color: #fff1f1;
 }
 
-main {
+.contentScreen {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -21,7 +21,7 @@ main {
   margin: auto;
 }
 
-title {
+.ong-name {
   margin: 50px 0 10px 0;
   display: flex;
   justify-content: center;
@@ -95,3 +95,10 @@ label {
   border-radius: 20px;
   background-color: rgba(249, 221, 237, 241);
 }
+/* @media only screen and (max-width: 600px) {
+  main{
+    width: 350px;
+    height: 630px;
+
+  }
+}  */
