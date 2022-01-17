@@ -13,3 +13,4 @@ function exibirNaTela(cadastrados) {
 }
 
 exibirNaTela(cadastrados);
+  
